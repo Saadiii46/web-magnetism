@@ -1,0 +1,145 @@
+
+.fac-programs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.fac-program {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: left;
+    height: 325px;
+}
+
+.fac-program-header {
+    /* display: flex; */
+
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.fac-program-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.fac-program h5 {
+    padding-top: 15px;
+    font-size: 18px;
+    color: #000f38;
+    margin: 0;
+    font-weight: 600;
+}
+
+.caption p {
+    color: #676767;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    line-height: 24px;
+    color: #433E47;
+    font-weight: 300;
+}
+
+
+@media (max-width: 800px) {
+    .fac-programs {
+        flex-direction: column;
+    }
+
+    .fac-program {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+
+.facility {
+    background: linear-gradient(90deg, rgba(91,83,249,1) 0%, rgba(172,113,214,1) 50%, rgba(255,142,87,1) 100%);
+    
+    color: #fff;
+    background-size: cover; 
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto; 
+    
+    z-index: -1;
+}
+
+.facility-left {
+   
+    flex-basis: 40%;
+    position: relative;
+}
+
+.facility-right {
+    
+    margin-top: -400px;
+    flex-basis: 56%;
+}
+
+.facility-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.play-icon {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+
+.facility h2 {
+    font-size: 35px;
+    color: #fff;
+    margin: 10px 0;
+    max-width: 400px;
+}
+
+.facility-right p {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.btn-facility {
+    background: rgb(242,74,177);
+background: linear-gradient(90deg, rgba(242,74,177,1) 0%, rgba(255,102,196,1) 100%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .facility {
+        flex-direction: column;
+    }
+
+    .facility-left,
+    .facility-right {
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}
